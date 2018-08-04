@@ -1,25 +1,136 @@
-.App {
-  text-align: center;
-  font-family: "Courier New", monospace;
-  width: 100%; }
-
-h1 {
-  font-weight: normal;
-  font-size: 42px; }
-
-.passwords {
-  list-style: none;
+body {
+  margin: 10px;
   padding: 0;
-  font-size: 32px;
-  margin-bottom: 2em; }
+  font-family: sans-serif; }
 
-.more {
-  font-size: 32px;
-  font-family: "Courier New", monospace;
-  border: 2px solid #000;
-  background-color: #fff;
-  padding: 10px 25px; }
-  .more:hover {
-    background-color: red; }
-  .more:active {
-    background-color: #FFEFA9; }
+.App {
+  max-width: 1200px; }
+
+.cards-tags-wrapper {
+  margin-top: 5px; }
+
+.list-tags-wrapper {
+  display: inline-block; }
+
+.filter-wrapper {
+  display: inline-block;
+  margin-left: 20px; }
+
+.view-wrapper {
+  display: inline-block;
+  margin-left: 20px; }
+
+.search-wrapper {
+  display: inline-block;
+  margin-left: 8px;
+  margin-top: 10px;
+  margin-bottom: 9px; }
+
+.search {
+  padding: 8px;
+  margin-left: 5px; }
+
+.filter {
+  display: inline-block;
+  border: 2px solid #ccc;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 5px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: box-shadow .2s; }
+
+.filter:hover {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); }
+
+.selected {
+  border: 2px solid #333; }
+
+.cards-idea {
+  padding: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  min-width: 200px;
+  width: calc(25% - 32px); }
+
+.cards-tag {
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  white-space: nowrap;
+  display: inline-block;
+  margin: 3px; }
+
+.list-tag {
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  margin-left: 4px;
+  display: inline-block;
+  position: relative; }
+
+.list-tag:hover::after {
+  content: attr(data-content);
+  background: #3a3a3a;
+  padding: 5px 15px;
+  border-radius: 2px;
+  position: absolute;
+  top: -26px;
+  left: 4px;
+  color: white;
+  font-size: 13px;
+  z-index: 300;
+  display: block;
+  white-space: nowrap; }
+
+/*https://www.materialui.co/colors*/
+.research {
+  background-color: #ffcdd2; }
+
+.public {
+  background-color: #F8BBD0; }
+
+.ethics {
+  background-color: #E1BEE7; }
+
+.new {
+  background-color: #D1C4E9; }
+
+.internal {
+  background-color: #C5CAE9; }
+
+.collab {
+  background-color: #BBDEFB; }
+
+.dash {
+  background-color: #B2EBF2; }
+
+.ux {
+  background-color: #B2DFDB; }
+
+.features {
+  background-color: #C8E6C9; }
+
+.impact {
+  background-color: #F0F4C3; }
+
+.ml {
+  background-color: #FFF9C4; }
+
+.analysis {
+  background-color: #FFECB3; }
+
+.training {
+  background-color: #FFE0B2; }
+
+.data {
+  background-color: #FFCCBC; }
+
+.viz {
+  background-color: #D7CCC8; }
+
+.moonshot {
+  background-color: #ECEFF1; }
