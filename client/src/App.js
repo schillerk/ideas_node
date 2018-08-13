@@ -22,6 +22,9 @@ const TAGS = {
   data: "Data Quality / New Data",
   viz: "New and Improved Visualizations",
   moonshot: "Moonshots",
+  culture: "Culture",
+  events: "Events",
+  values: "Values",
 };
 
 const VIEWS = ['cards', 'list'];
