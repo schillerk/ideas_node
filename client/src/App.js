@@ -31,17 +31,24 @@ const VIEWS = ['cards', 'list'];
 const FILTERS = ['all', 'none'];
 const MODES = ['view', 'edit'];
 
+
+
 class App extends Component {
-  const setTags = window.location.hash == 'offsite' ? [TAGS.culture, TAGS.events, TAGS.values] : [];
-  const setFilters = window.location.hash == 'offsite' ? 'none' : 'all';
-  state = {
-    selectedTags: setTags,
-    view: 'cards',
-    defaultFilter: setFilters,
-    search: '',
-    submit: '',
-    mode: 'view',
-    ideaList: [],
+  constructor() {
+    super();
+    const setTags = window.location.hash == '#offsite' ? ['culture', 'events', 'values'] : [];
+    const setFilters = window.location.hash == '#offsite' ? 'none' : 'all';
+    console.log(window.location.hash);
+    console.log(setTags);
+    this.state = {
+      selectedTags: setTags,
+      view: 'cards',
+      defaultFilter: setFilters,
+      search: '',
+      submit: '',
+      mode: 'view',
+      ideaList: [],
+    }
   }
 
   componentDidMount() {
@@ -93,6 +100,7 @@ class App extends Component {
   }
 
   handleClick(value) {
+    console.log(this.state.selectedTags);
     if (contains(this.state.selectedTags, value)) {
       this.setState({ selectedTags: this.state.selectedTags.filter(tag => tag !== value) });
     }
