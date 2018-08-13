@@ -32,10 +32,12 @@ const FILTERS = ['all', 'none'];
 const MODES = ['view', 'edit'];
 
 class App extends Component {
+  const setTags = window.location.hash == 'offsite' ? [TAGS.culture, TAGS.events, TAGS.values] : [];
+  const setFilters = window.location.hash == 'offsite' ? 'none' : 'all';
   state = {
-    selectedTags: [],
+    selectedTags: setTags,
     view: 'cards',
-    defaultFilter: 'all',
+    defaultFilter: setFilters,
     search: '',
     submit: '',
     mode: 'view',
