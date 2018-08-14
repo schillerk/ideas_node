@@ -25,6 +25,13 @@ const TAGS = {
   culture: "Culture",
   events: "Events",
   values: "Values",
+  excellence: "Excellence",
+  teamwork: "Teamwork",
+  learning: "Learning",
+  accountability: "Accountability",
+  risk: "Risk",
+  dandi: "Diversity & Inclusion",
+  communication: "Communication",
 };
 
 const VIEWS = ['cards', 'list'];
